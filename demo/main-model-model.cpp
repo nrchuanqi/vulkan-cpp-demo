@@ -120,10 +120,10 @@ int main()
     auto ubo = shaderSet1->addUniformBuffer(0, sizeof(float) * 17);
     ubo->setWriteDataCallback(updateUniformBufferData1);
 
-    auto buffer = context->createVertexBuffer("../model/pug.obj", true);
+    auto buffer = context->createVertexBuffer("../../model/pug.obj", true);
     context->addBuffer(buffer);
 
-    auto image = context->createImage("../model/PUG_TAN.tga");
+    auto image = context->createImage("../../model/PUG_TAN.tga");
 
     auto imageViewCreateInfo = VK_ImageView::createImageViewCreateInfo(image->getImage(),
                                VK_FORMAT_R8G8B8A8_SRGB);

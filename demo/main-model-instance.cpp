@@ -113,7 +113,7 @@ int main()
             instance[i].x = (i % 2 == 1) ? 0.5f * (i + 1) / 2 : -0.5f * (i + 1) / 2;
     }
 
-    auto buffer = context->createVertexBuffer("../model/pug.obj", true, true);
+    auto buffer = context->createVertexBuffer("../../model/pug.obj", true, true);
     pipeline->addRenderBuffer(buffer);
 
     uint32_t count = buffer->getDataCount();

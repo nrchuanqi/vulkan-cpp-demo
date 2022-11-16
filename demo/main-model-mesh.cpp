@@ -94,7 +94,7 @@ int main()
 
     pipeline->create();
 
-    auto buffer = context->createVertexBuffer("../model/pug.obj", true);
+    auto buffer = context->createVertexBuffer("../../model/pug.obj", true);
     pipeline->addRenderBuffer(buffer);
 
     context->createCommandBuffers();

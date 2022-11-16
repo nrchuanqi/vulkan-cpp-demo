@@ -107,7 +107,7 @@ int main()
     pipeline->setRasterizationStateCreateInfo(rasterCreateInfo);
 
     pipeline->create();
-    auto buffer = context->createVertexBuffer("../model/pug.obj", true);
+    auto buffer = context->createVertexBuffer("../../model/pug.obj", true);
     pipeline->addRenderBuffer(buffer);
 
     context->createCommandBuffers();

@@ -98,7 +98,7 @@ int main()
     auto ubo = shaderSet->addUniformBuffer(0, sizeof(UBO));
     ubo->setWriteDataCallback(updateUniformBufferData);
 
-    auto image = context->createImage("../model/PUG_TAN.tga");
+    auto image = context->createImage("../../model/PUG_TAN.tga");
 
     auto imageViewCreateInfo = VK_ImageView::createImageViewCreateInfo(image->getImage(),
                                VK_FORMAT_R8G8B8A8_SRGB);
@@ -119,7 +119,7 @@ int main()
     pipeline->setRasterizationStateCreateInfo(rasterCreateInfo);
     pipeline->create();
 
-    auto buffer = context->createVertexBuffer("../model/pug.obj", true);
+    auto buffer = context->createVertexBuffer("../../model/pug.obj", true);
     pipeline->addRenderBuffer(buffer);
 
     context->createCommandBuffers();

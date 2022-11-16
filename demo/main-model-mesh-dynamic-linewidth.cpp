@@ -97,7 +97,7 @@ int main()
     dynamicState->applyDynamicLineWidth(2.0f);
 
     pipeline->create();
-    auto buffer = context->createVertexBuffer("../model/pug.obj", true);
+    auto buffer = context->createVertexBuffer("../../model/pug.obj", true);
     pipeline->addRenderBuffer(buffer);
 
     context->createCommandBuffers();

@@ -127,7 +127,7 @@ int main()
     pipeline->setRasterizationStateCreateInfo(rasterCreateInfo);
 
     pipeline->create();
-    auto buffer = context->createVertexBuffer("../model/pug.obj", true);
+    auto buffer = context->createVertexBuffer("../../model/pug.obj", true);
     pipeline->addRenderBuffer(buffer);
 
     auto query = context->createQueryPool(8, VK_QUERY_PIPELINE_STATISTIC_INPUT_ASSEMBLY_VERTICES_BIT |
