@@ -86,8 +86,8 @@ int main()
     context->initVulkanDevice(vkConfig);
 
     auto shaderSet1 = context->createShaderSet();
-    shaderSet1->addShader("../shader/model/vert.spv", VK_SHADER_STAGE_VERTEX_BIT);
-    shaderSet1->addShader("../shader/model/frag.spv", VK_SHADER_STAGE_FRAGMENT_BIT);
+    shaderSet1->addShader("../../shader/model/vert.spv", VK_SHADER_STAGE_VERTEX_BIT);
+    shaderSet1->addShader("../../shader/model/frag.spv", VK_SHADER_STAGE_FRAGMENT_BIT);
 
     shaderSet1->appendVertexAttributeDescription(0, sizeof (float) * 3, VK_FORMAT_R32G32B32_SFLOAT, 0);
     shaderSet1->appendVertexAttributeDescription(1, sizeof (float) * 2, VK_FORMAT_R32G32_SFLOAT,
@@ -142,8 +142,8 @@ int main()
     pipeline->addRenderBuffer(buffer);
 
     auto shaderSet2 = context->createShaderSet();
-    shaderSet2->addShader("../shader/model-mesh/vert.spv", VK_SHADER_STAGE_VERTEX_BIT);
-    shaderSet2->addShader("../shader/model-mesh/frag.spv", VK_SHADER_STAGE_FRAGMENT_BIT);
+    shaderSet2->addShader("../../shader/model-mesh/vert.spv", VK_SHADER_STAGE_VERTEX_BIT);
+    shaderSet2->addShader("../../shader/model-mesh/frag.spv", VK_SHADER_STAGE_FRAGMENT_BIT);
 
     shaderSet2->appendVertexAttributeDescription(0, sizeof (float) * 3, VK_FORMAT_R32G32B32_SFLOAT, 0);
     shaderSet2->appendVertexAttributeDescription(1, sizeof (float) * 2, VK_FORMAT_R32G32_SFLOAT,

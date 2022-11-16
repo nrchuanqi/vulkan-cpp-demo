@@ -76,8 +76,8 @@ int main()
     context->initVulkanDevice(vkConfig);
 
     auto shaderSet = context->createShaderSet();
-    shaderSet->addShader("../shader/model-toon-push-constant/vert.spv", VK_SHADER_STAGE_VERTEX_BIT);
-    shaderSet->addShader("../shader/model-toon-push-constant/frag.spv", VK_SHADER_STAGE_FRAGMENT_BIT);
+    shaderSet->addShader("../../shader/model-toon-push-constant/vert.spv", VK_SHADER_STAGE_VERTEX_BIT);
+    shaderSet->addShader("../../shader/model-toon-push-constant/frag.spv", VK_SHADER_STAGE_FRAGMENT_BIT);
 
     shaderSet->appendVertexAttributeDescription(0, sizeof (float) * 3, VK_FORMAT_R32G32B32_SFLOAT, 0);
     shaderSet->appendVertexAttributeDescription(1, sizeof (float) * 2, VK_FORMAT_R32G32_SFLOAT,

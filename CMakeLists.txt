@@ -6,10 +6,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set (CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/module")
 
-set(GLFW_ROOT "D:\\glfw-3.3.5.bin.WIN64")
-include_directories("C:\\VulkanSDK\\1.2.189.2\\Include")
-LINK_DIRECTORIES("C:\\VulkanSDK\\1.2.189.2\\Lib")
-LINK_DIRECTORIES("D:\\glfw-3.3.5.bin.WIN64\\lib-mingw-w64")
+set(GLFW_ROOT "D:\\VulkanAll\\glfw-3.3.8.bin.WIN32\\glfw-3.3.8.bin.WIN32")
+include_directories("D:\\VulkanSDK\\1.3.231.1\\Include")
+LINK_DIRECTORIES("D:\\VulkanSDK\\1.3.231.1\\Lib")
+LINK_DIRECTORIES("D:\\VulkanAll\\glfw-3.3.8.bin.WIN32\\glfw-3.3.8.bin.WIN32\\lib-mingw-w64")
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)

@@ -53,8 +53,8 @@ int main()
     context->initVulkanDevice(vkConfig);
 
     auto shaderSet = context->createShaderSet();
-    shaderSet->addShader("../shader/texture/vert.spv", VK_SHADER_STAGE_VERTEX_BIT);
-    shaderSet->addShader("../shader/texture/frag.spv", VK_SHADER_STAGE_FRAGMENT_BIT);
+    shaderSet->addShader("../../shader/texture/vert.spv", VK_SHADER_STAGE_VERTEX_BIT);
+    shaderSet->addShader("../../shader/texture/frag.spv", VK_SHADER_STAGE_FRAGMENT_BIT);
 
     shaderSet->appendVertexAttributeDescription(0, sizeof (float) * 3, VK_FORMAT_R32G32B32_SFLOAT, 0);
     shaderSet->appendVertexAttributeDescription(1, sizeof (float) * 4, VK_FORMAT_R32G32B32A32_SFLOAT,
@@ -88,8 +88,8 @@ int main()
     auto ubo = shaderSet->addUniformBuffer(0, sizeof(float) * 16);
     ubo->setWriteDataCallback(updateUniformBufferData);
 
-    auto cat = context->createImage("../images/kitten.png");
-    auto wall = context->createImage("../images/wall.png");
+    auto cat = context->createImage("../../images/kitten.png");
+    auto wall = context->createImage("../../images/wall.png");
 
     auto command = context->getCommandPool()->beginSingleTimeCommands();
 

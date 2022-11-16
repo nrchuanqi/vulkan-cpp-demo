@@ -31,7 +31,7 @@ public:
 
     struct VK_Config {
         int maxFramsInFlight = 2;
-        std::string pipelineCacheFile = "../pipelineCache/pipelineCache";
+        std::string pipelineCacheFile = "../../bin/pipelineCache";
         std::vector<const char *> enabledExtensions;
     };
 

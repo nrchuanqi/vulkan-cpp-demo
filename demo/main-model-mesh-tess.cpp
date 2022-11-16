@@ -61,10 +61,10 @@ int main()
     context->initVulkanDevice(vkConfig);
 
     auto shaderSet = context->createShaderSet();
-    shaderSet->addShader("../shader/geom-mesh-tess/vert.spv", VK_SHADER_STAGE_VERTEX_BIT);
-    shaderSet->addShader("../shader/geom-mesh-tess/frag.spv", VK_SHADER_STAGE_FRAGMENT_BIT);
-    shaderSet->addShader("../shader/geom-mesh-tess/tesc.spv", VK_SHADER_STAGE_TESSELLATION_CONTROL_BIT);
-    shaderSet->addShader("../shader/geom-mesh-tess/tese.spv",
+    shaderSet->addShader("../../shader/geom-mesh-tess/vert.spv", VK_SHADER_STAGE_VERTEX_BIT);
+    shaderSet->addShader("../../shader/geom-mesh-tess/frag.spv", VK_SHADER_STAGE_FRAGMENT_BIT);
+    shaderSet->addShader("../../shader/geom-mesh-tess/tesc.spv", VK_SHADER_STAGE_TESSELLATION_CONTROL_BIT);
+    shaderSet->addShader("../../shader/geom-mesh-tess/tese.spv",
                          VK_SHADER_STAGE_TESSELLATION_EVALUATION_BIT);
 
     shaderSet->appendVertexAttributeDescription(0, sizeof (float) * 3, VK_FORMAT_R32G32B32_SFLOAT, 0);

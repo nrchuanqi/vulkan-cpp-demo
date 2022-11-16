@@ -79,8 +79,8 @@ int main()
     }
 
     auto shaderSet = context->createShaderSet();
-    shaderSet->addShader("../shader/texel-buffer/texel-buffer.vert.spv", VK_SHADER_STAGE_VERTEX_BIT);
-    shaderSet->addShader("../shader/texel-buffer/texel-buffer.frag.spv", VK_SHADER_STAGE_FRAGMENT_BIT);
+    shaderSet->addShader("../../shader/texel-buffer/texel-buffer.vert.spv", VK_SHADER_STAGE_VERTEX_BIT);
+    shaderSet->addShader("../../shader/texel-buffer/texel-buffer.frag.spv", VK_SHADER_STAGE_FRAGMENT_BIT);
 
     shaderSet->appendVertexAttributeDescription(0, sizeof (float) * 3, VK_FORMAT_R32G32B32_SFLOAT, 0);
     shaderSet->appendVertexAttributeDescription(1, sizeof (float) * 4, VK_FORMAT_R32G32B32A32_SFLOAT,
